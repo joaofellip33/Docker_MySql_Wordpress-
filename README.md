@@ -152,9 +152,9 @@ E inserimos a seguinte programação e salvamos o documento.
 	      MYSQL_PASSWORD: ${MYSQL_PASSWORd}
 	      MYSQL_DATABASE: ${MYSQL_DATABASE}
 	    
-	  #MYSQL_DATABASE ou todos os valores dentro de ${ } é uma variável do arquivo .env 
-	  #${ } é usado para chamar a variável do arquivo .env
-	  #Dentro do ${ } fica o nome da váriável que é procurada automaticamente por padrão dentro de uma arquivo .env
+	#MYSQL_DATABASE ou todos os valores dentro de ${ } é uma variável do arquivo .env 
+	#${ } é usado para chamar a variável do arquivo .env
+	#Dentro do ${ } fica o nome da váriável que é procurada automaticamente por padrão dentro de uma arquivo .env
 	    
 	    ports:
 	      - "3308:3306"
