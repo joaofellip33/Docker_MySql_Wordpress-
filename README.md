@@ -155,6 +155,7 @@ E inserimos a seguinte programação e salvamos o documento.
 	#MYSQL_DATABASE ou todos os valores dentro de ${ } é uma variável do arquivo .env 
 	#${ } é usado para chamar a variável do arquivo .env
 	#Dentro do ${ } fica o nome da váriável que é procurada automaticamente por padrão dentro de uma arquivo .env
+	#que deve ficar no mesmo diretório que este arquivo de configuração docker-compose
 	    
 	    ports:
 	      - "3308:3306"
