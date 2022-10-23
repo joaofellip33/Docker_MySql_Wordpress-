@@ -151,6 +151,11 @@ E inserimos a seguinte programação e salvamos o documento.
 	      MYSQL_USER: ${MYSQL_USER}
 	      MYSQL_PASSWORD: ${MYSQL_PASSWORd}
 	      MYSQL_DATABASE: ${MYSQL_DATABASE}
+	    
+	  #MYSQL_DATABASE ou todos os valores dentro de ${ } é uma variável do arquivo .env 
+	  #${ } é usado para chamar a variável do arquivo .env
+	  #Dentro do ${ } fica o nome da váriável que é procurada automaticamente por padrão dentro de uma arquivo .env
+	    
 	    ports:
 	      - "3308:3306"
 	    volumes:
@@ -196,6 +201,8 @@ docker-compose up
 
 
 # Configurando Arquivo .env para Configuração de Variáveis de Ambientes
+
+Você pode definir valores padrão para qualquer variável de ambiente referenciada no Compose file, ou usado para configurar o Compose, em um arquivo de ambiente nomeado .env. ou .env caminho do arquivo é o seguinte: 
 
 1. Crie um arquivo de nome .env com o comando:
 
