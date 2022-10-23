@@ -195,7 +195,7 @@ docker-compose up
 4. Com o processo de instalação terminado basta verificar se está tudo funcionando, para isso vá no navegador e digite “localhost:80”, ou no lugar de "localhost" colocar nome do domínio configurado no arquivo /etc/hosts e  aperta enter. Se tudo estiver certo aparecerá a página de configuração e instalação do wordpress.
 
 
-#Configurando Arquivo .env para Configuração de Variáveis de Ambientes
+# Configurando Arquivo .env para Configuração de Variáveis de Ambientes
 
 	MYSQL_ROOT_PASSWORD=docker
 	MYSQL_USER=docker
