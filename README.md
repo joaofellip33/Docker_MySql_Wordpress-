@@ -147,10 +147,10 @@ E inserimos a seguinte programação e salvamos o documento.
 	    restart: always
 	    environment:
 	      TZ: America/Sao_Paulo
-	      MYSQL_ROOT_PASSWORD: docker
-	      MYSQL_USER: docker
-	      MYSQL_PASSWORD: docker
-	      MYSQL_DATABASE: wordpress
+	      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+	      MYSQL_USER: ${MYSQL_USER}
+	      MYSQL_PASSWORD: ${MYSQL_PASSWORd}
+	      MYSQL_DATABASE: ${MYSQL_DATABASE}
 	    ports:
 	      - "3308:3306"
 	    volumes:
@@ -167,10 +167,10 @@ E inserimos a seguinte programação e salvamos o documento.
 	    restart: always
 	    environment:
 	      TZ: America/Sao_Paulo
-	      WORDPRESS_DB_HOST: db
-	      WORDPRESS_DB_NAME: wordpress
-	      WORDPRESS_DB_USER: root
-	      WORDPRESS_DB_PASSWORD: docker
+	      WORDPRESS_DB_HOST: ${WORDPRESS_DB_HOST}
+	      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+	      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+	      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
 	    depends_on:
 	      - db
 	    networks:
@@ -178,6 +178,7 @@ E inserimos a seguinte programação e salvamos o documento.
 	networks:
 	    wordpress-network:
 	      driver: bridge
+
 
 
 >Obs: pressione a tecla i para entrar no modo de edição. Edite o arquivo e salve! Para salvar basta pressionar ESC e digitar :wq! e dar enter.
