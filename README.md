@@ -127,13 +127,13 @@ sudo chmod 644 hosts
 1. Para iniciar  é criar uma arquivo com a extensão “.yml”, para isso usamos o comando:
 
 ```	
-touch arquivo-docker.yml
+touch arquivo-docker.yaml
 ```
 
 2. Após criar o arquivo “arquivo-docker.yml”, precisamos configurá-lo com a linguagem YML. Vamos usar a seguinte configuração para baixar as imagens mysql e wordpress com as seguintes configurações de variáveis de ambiente. Para fazer a edição usamos o comando:
 
 ```
-vim arquivo-docker.yml
+vim arquivo-docker.yaml
 ```
 
 E inserimos a seguinte programação e salvamos o documento.
@@ -197,12 +197,23 @@ docker-compose up
 
 # Configurando Arquivo .env para Configuração de Variáveis de Ambientes
 
-	MYSQL_ROOT_PASSWORD=docker
-	MYSQL_USER=docker
-	MYSQL_PASSWORD=docker
-	MYSQL_DATABASE=wordpress
+1. Crie um arquivo de nome .env com o comando:
 
-	WORDPRESS_DB_HOST=db
-	WORDPRESS_DB_NAME=wordpress
-	WORDPRESS_DB_USER=root
-	WORDPRESS_DB_PASSWORD=docker
+```
+vim .env
+```
+> Obs: Esse arquivo deve ser criado no mesmo diretório que está o arquivo arquivo-docker.yaml
+
+2. Edite o arquivo .env com as seguintes configurações de variáveis de ambientes do arquivo arquivo-docker.yaml
+	
+```	
+MYSQL_ROOT_PASSWORD=docker
+MYSQL_USER=docker
+MYSQL_PASSWORD=docker
+MYSQL_DATABASE=wordpress
+
+WORDPRESS_DB_HOST=db
+WORDPRESS_DB_NAME=wordpress
+WORDPRESS_DB_USER=root
+WORDPRESS_DB_PASSWORD=docker
+```
