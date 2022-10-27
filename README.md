@@ -225,3 +225,5 @@ WORDPRESS_DB_NAME=wordpress
 WORDPRESS_DB_USER=root
 WORDPRESS_DB_PASSWORD=docker
 ```
+
+https://pt.stackoverflow.com/questions/178662/atualizar-div-automaticamente-autorefresh-sem-atualizar-p%C3%A1gina-toda
